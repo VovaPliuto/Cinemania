@@ -2,83 +2,122 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/Cinemania/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="Frame770814.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Cinemania</title>
+    <script >
+      let localS = localStorage.getItem("ui-theme");
+      if (localS === "light") {
+        document.documentElement.setAttribute("light", "light");
+      }
+    </script>
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     
-    <script type="module" crossorigin src="/Cinemania/assets/index-fac82e35.js"></script>
-    <link rel="stylesheet" href="/Cinemania/assets/index-10c40100.css">
+    <script type="module" crossorigin src="/Cinemania/assets/index-081d5ef2.js"></script>
+    <link rel="stylesheet" href="/Cinemania/assets/index-b9c9deea.css">
   </head>
   <body>
     <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./catalog.html" class="nav-link">Page 2</a>
-      </li>
+  <div class="container-header">
+    <div class="header-wrap">
+      <nav class="nav">
+        <a class="logo-link" href="./index.html">
+          <div class="img-wrap">
+            <img loading="lazy" src="/Cinemania/assets/Frame770814-223b4093.svg" alt="Cinemania Logo" />
+          </div>
+          <span class="logo-text">Cinemania</span>
+        </a>
+        <button type="button" class="nav-menu-btn">MENU</button>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link home-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="./catalog.html" class="nav-link catalog-link">Catalog</a>
+          </li>
 
-      <li class="nav-item">
-        <a href="./my-library.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-
-    <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/Cinemania/assets/javascript-8dac5379.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
-        </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
-        </li>
-      </ul>
-    </div>
-
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/Cinemania/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
+          <li class="nav-item">
+            <a href="./my-library.html" class="nav-link library-link"
+              >My library</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <input type="checkbox" id="theme-changer" />
+      <label for="theme-changer" class="theme-changer">
+        <svg class="icon-moon">
+          <use href="/Cinemania/assets/header-sprite-f8641751.svg#icon-moon"></use>
+        </svg>
+        <svg class="icon-sun">
+          <use href="/Cinemania/assets/header-sprite-f8641751.svg#icon-sun"></use>
+        </svg>
+        <img
+        class="changer-btn"
+          width="13"
+          src="/Cinemania/assets/white-circle-btn-e17f2280.svg"
+          alt="Icon button"
+        />
+      </label>
     </div>
   </div>
-</section>
 
+  <!-- MOBILE-MENU ---->
+    <div class="mobile-menu-backdrop is-hidden-header">
+      <div class="mobile-menu">
+        <nav class="mobile-menu-nav">
+          <div class="img-wrap">
+            <a class="logo-img" href="./index.html">
+              <img
+                src="/Cinemania/assets/Frame770814-223b4093.svg"
+                alt="Cinemania Logo"
+                width="32"
+                height="32"
+            /></a>
+          </div>
+          <ul class="mobile-menu-list">
+            <li class="mobile-menu-item">
+              <a href="./index.html" class="mobile-menu-link home-link">HOME</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="./catalog.html" class="mobile-menu-link catalog-link"
+                >CATALOG</a
+              >
+            </li>
+            <li class="mobile-menu-item">
+              <a href="./my-library.html" class="mobile-menu-link library-link"
+                >MY LIBRARY</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+</header>
+
+    <main>
+      <div class="rendered-hero"></div>
+
+<div class="simple-rating">
+  <div class="simple-rating__items">
+    <input id="simple-rating__5" class="simple-rating__item" type="radio" value="5" name="simple-rating">
+    <label for="simple-rating__5" class="simple-rating__label"></label>
+    <input id="simple-rating__4" class="simple-rating__item" type="radio" value="4" name="simple-rating">
+    <label for="simple-rating__4" class="simple-rating__label"></label>
+    <input id="simple-rating__3" class="simple-rating__item" type="radio" value="3" name="simple-rating">
+    <label for="simple-rating__3" class="simple-rating__label"></label>
+    <input id="simple-rating__2" class="simple-rating__item" type="radio" value="2" name="simple-rating">
+    <label for="simple-rating__2" class="simple-rating__label"></label>
+    <input id="simple-rating__1" class="simple-rating__item" type="radio" value="1" name="simple-rating">
+    <label for="simple-rating__1" class="simple-rating__label"></label>
+  </div>
+</div>
+
+
+    </main>
+    <!-- Loads the specified .html file -->
 
     
   </body>
