@@ -1,13 +1,76 @@
 <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./catalog.html" class="nav-link">Page 2</a>
-      </li>
+  <div class="container-header">
+    <div class="header-wrap">
+      <nav class="nav">
+        <a class="logo-link" href="./index.html">
+          <div class="img-wrap">
+            <img loading="lazy" src="./public/Frame770814.svg" alt="Cinemania Logo" />
+          </div>
+          <span class="logo-text">Cinemania</span>
+        </a>
+        <button type="button" class="nav-menu-btn">MENU</button>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link home-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="./catalog.html" class="nav-link catalog-link">Catalog</a>
+          </li>
 
-      <li class="nav-item">
-        <a href="./my-library.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
+          <li class="nav-item">
+            <a href="./my-library.html" class="nav-link library-link"
+              >My library</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <input type="checkbox" id="theme-changer" />
+      <label for="theme-changer" class="theme-changer">
+        <svg class="icon-moon">
+          <use href="./img/header-sprite.svg#icon-moon"></use>
+        </svg>
+        <svg class="icon-sun">
+          <use href="./img/header-sprite.svg#icon-sun"></use>
+        </svg>
+        <img
+        class="changer-btn"
+          width="13"
+          src="./public/white-circle-btn.svg"
+          alt="Icon button"
+        />
+      </label>
+    </div>
+  </div>
+
+  <!-- MOBILE-MENU ---->
+    <div class="mobile-menu-backdrop is-hidden-header">
+      <div class="mobile-menu">
+        <nav class="mobile-menu-nav">
+          <div class="img-wrap">
+            <a class="logo-img" href="./index.html">
+              <img
+                src="./public/Frame770814.svg"
+                alt="Cinemania Logo"
+                width="32"
+                height="32"
+            /></a>
+          </div>
+          <ul class="mobile-menu-list">
+            <li class="mobile-menu-item">
+              <a href="./index.html" class="mobile-menu-link home-link">HOME</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="./catalog.html" class="mobile-menu-link catalog-link"
+                >CATALOG</a
+              >
+            </li>
+            <li class="mobile-menu-item">
+              <a href="./my-library.html" class="mobile-menu-link library-link"
+                >MY LIBRARY</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
 </header>

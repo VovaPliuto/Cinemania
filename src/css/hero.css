@@ -1,0 +1,120 @@
+.container {
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.hero {
+  width: 100%;
+  height: 380px;
+  padding: 40px 0;
+  background-image: linear-gradient(
+      86.77deg,
+      #111111 30.38%,
+      rgba(17, 17, 17, 0) 65.61%
+    ),
+    url(../img/default-background-mobile.jpeg);
+}
+
+.hero-default-title,
+.hero-title {
+  width: 199px;
+  margin-bottom: 8px;
+
+  font-weight: 700;
+  font-size: 32px;
+  line-height: calc(38 / 32);
+  color: #f8f8f8;
+}
+
+.hero-default-text,
+.hero-text {
+  width: 166px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+
+  color: #f8f8f8;
+}
+
+.hero-default-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 110px;
+  height: 38px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  text-align: center;
+  text-decoration: none;
+  color: #111111;
+  background: linear-gradient(141.22deg, #ffc226 9.4%, #f84119 91.91%);
+  border-radius: 74px;
+}
+
+.fetch-rendered {
+  background-image: linear-gradient(
+    86.77deg,
+    #111111 30.38%,
+    rgba(17, 17, 17, 0) 65.61%
+  );
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-title.fetch {
+  margin-bottom: 12px;
+  width: 245px;
+}
+
+.hero-text {
+  width: 177px;
+  height: 66px;
+  overflow-y: scroll;
+}
+
+.hero-btn {
+  width: 117px;
+  height: 38px;
+  padding: 12px 24px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  border-radius: 74px;
+  border: none;
+}
+
+.trailer-btn {
+  color: #111111;
+  background: linear-gradient(141.22deg, #ffc226 9.4%, #f84119 91.91%);
+  margin-right: 8px;
+}
+
+.details-btn {
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+}
+
+.rating {
+  color: orangered;
+  margin-bottom: 20px;
+}
+
+/* ===== SIMPLE RATING ===== */
+
+.simple-rating {
+  position: relative;
+  font-style: 40px;
+  display: inline-block;
+}
+.simple-rating__items {
+}
+.simple-rating__item {
+}
+.simple-rating__label {
+}
